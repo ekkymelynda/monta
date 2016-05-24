@@ -4,32 +4,6 @@
   <title>Monitoring Tugas Akhir</title>
 </head>
 <body>
-	<a href="">Tahun Ajaran</a>
-	<br>
-	<a href="">Status Pembimbingan</a>
-	<br>
-	<a href="">Pendidik dan Tenaga Kependidikan</a>
-	<br>
-	<a href="">Status Tugas Akhir</a>
-	<br>
-	<a href="">Peserta Didik</a>
-	<br>
-	<a href="">Semester</a>
-	<br>
-	<a href="">Kemajuan Tugas Akhir</a>
-	<br>
-	<a href="">Aktvitas Membimbing</a>
-	<br>
-	<a href="">Tugas Akhir</a>
-	<br>
-	<a href="">Rumpun Ilmu</a>
-	<br>
-	<a href="">Proposal Tugas Akhir</a>
-	<br>
-	<a href="">Keluar</a>
-	<br>
-	<br>
-
 	<h1>Tahun Ajaran</h1>
 <form action="">
   ID tahun ajaran:<br>
