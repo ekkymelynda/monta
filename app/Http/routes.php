@@ -35,3 +35,22 @@ Route::post('c_PesertaDidik', array('before' => 'csrf', 'uses' =>'PesertaDidikCo
 Route::get('c_peserta_didik', function () {
     return view('peserta didik/c');
 });
+
+Route::get('c_akt_bimbing', function () {
+    return view('aktivitas membimbing/c');
+});
+Route::get('r_akt_bimbing', function () {
+    return view('aktivitas membimbing/r');
+});
+Route::get('c_TA', function () {
+    return view('proposal tugas akhir/c');
+});
+Route::get('r_TA', function () {
+    return view('proposal tugas akhir/r');
+});
+Route::get('c_stat_bimbing', function () {
+    return view('status pembimbingan/c');
+});
+Route::get('r_stat_bimbing', function () {
+    return view('status pembimbingan/r');
+});
