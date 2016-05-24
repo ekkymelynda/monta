@@ -4,22 +4,28 @@
   <title>Monitoring Tugas Akhir</title>
 </head>
 <body>
-	<h1>Peserta Didik</h1>
+	<h1>Tugas Akhir</h1>
 <form action="">
-  ID peserta didik:<br>
+  ID Tugas Akhir:<br>
   <input type="text" name="" placeholder=""><br>
-  Nama peserta didik:<br>
+  Judul Tugas Akhir:<br>
   <input type="text" name="" placeholder=""><br>
-  Jenis kelamin:<br>
+  Abstrak:<br>
   <input type="text" name="" placeholder=""><br>
-  Tanggal lahir:<br>
-  <input type="date" name="" placeholder=""><br>
-  NIM/NRP:<br>
+  Kata Kunci:<br>
   <input type="text" name="" placeholder=""><br>
-  Email:<br>
+  Nilai Angka:<br>
+  <input type="boolean" name="" placeholder=""><br>
+  ID Peserta Didik:<br>
   <input type="text" name="" placeholder=""><br>
-  Nomor handphone<br>
+  ID Rumpun Ilmu:<br>
+  <input type="boolean" name="" placeholder=""><br>
+  ID Status Tugas Akhir:<br>
+  <input type="boolean" name="" placeholder=""><br>
+  ID Proposal TA:<br>
   <input type="text" name="" placeholder=""><br>
+  ID Nilai Mata Kuliah:<br>
+  <input type="boolean" name="" placeholder=""><br>
   Create date:<br>
   <input type="date" name="" placeholder=""><br>
   Update date:<br>
