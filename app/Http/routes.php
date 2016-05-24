@@ -54,3 +54,19 @@ Route::get('c_stat_bimbing', function () {
 Route::get('r_stat_bimbing', function () {
     return view('status pembimbingan/r');
 });
+
+Route::get('c_pen_ten', function () {
+    return view('pendidik dan tenaga kependidikan/c');
+});
+
+Route::get('r_pen_ten', function () {
+    return view('pendidik dan tenaga kependidikan/r');
+});
+
+Route::get('c_rumpun_ilmu', function () {
+    return view('rumpun ilmu/c');
+});
+
+Route::get('r_rumpun_ilmu', function () {
+    return view('rumpun ilmu/r');
+});
