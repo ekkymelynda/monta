@@ -2,9 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+// use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
+
+use Request;
 
 use App\Http\Requests;
+use Ramsey\Uuid\Uuid;
+use App\peserta_didik;
 
 class PesertaDidikController extends Controller
 {
@@ -22,15 +27,17 @@ class PesertaDidikController extends Controller
             return view('\peserta didik\c');
             }
         elseif (Request::isMethod('post')){
-        	tahun_ajaran::insert(array(
-    			'id_pd'	=> Input::get('id_pd'),
+        	peserta_didik::insert(array(
+    			'id_pd'	=> Uuid::uuid4()->getHex(),
     			'nm_pd'	=> Input::get('nm_pd'),
     			'jk'	=> Input::get('jk'),
     			'tgl_lahir'	=> Input::get('tgl_lahir'),
     			'nim'	=> Input::get('nim'),
     			'email'	=> Input::get('email'),
     			'no_hp'	=> Input::get('no_hp'),
-    			'created_at'	=> Input::get('created_at')
+    			'created_at'	=> Input::get('created_at'),
+                'updated_at'    => Input::get('updated_at'),
+                'soft_delete'    => Input::get('soft_delete')
     		));
 			}
 	}

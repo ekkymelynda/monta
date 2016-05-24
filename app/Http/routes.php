@@ -15,11 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('c_tahun_ajaran', function () {
-//     return view('tahun ajaran/c');
-// <<<<<<< .mine
-// });
-
 Route::get('r_TahunAjar', 'TahunAjarController@lihat');
 Route::get('c_TahunAjar', 'TahunAjarController@create');
 Route::post('c_TahunAjar', array('before' => 'csrf', 'uses' =>'TahunAjarController@create'));
@@ -31,6 +26,7 @@ Route::post('c_PesertaDidik', array('before' => 'csrf', 'uses' =>'PesertaDidikCo
 Route::get('c_akt_bimbing', function () {
     return view('aktivitas membimbing/c');
 });
+
 Route::get('r_akt_bimbing', function () {
     return view('aktivitas membimbing/r');
 });
@@ -45,6 +41,18 @@ Route::get('c_stat_bimbing', function () {
 });
 Route::get('r_stat_bimbing', function () {
     return view('status pembimbingan/r');
+});
+
+Route::get('r_TahunAjar', 'TahunAjarController@lihat');
+Route::get('c_TahunAjar', 'TahunAjarController@create');
+Route::post('c_TahunAjar', array('before' => 'csrf', 'uses' =>'TahunAjarController@create'));
+
+Route::get('c_peserta_didik', function () {
+    return view('peserta didik/c');
+});
+
+Route::get('c_peserta_didik', function () {
+    return view('peserta didik/c');
 });
 
 Route::get('c_pen_ten', function () {
@@ -74,12 +82,15 @@ Route::get('r_stat_ta', function () {
 Route::get('r_semester', function () {
     return view('semester/r');
 });
+
 Route::get('c_semester', function () {
     return view('semester/c');
 });
+
 Route::get('r_kmjn_TA', function () {
     return view('kemajuan tugas akhir/c');
 });
+
 Route::get('r_kmjn_TA', function () {
     return view('kemajuan tugas akhir/r');
 });
@@ -87,6 +98,11 @@ Route::get('r_kmjn_TA', function () {
 Route::get('c_proposal_TA', function () {
     return view('proposal tugas akhir/c');
 });
+
 Route::get('r_proposal_TA', function () {
     return view('proposal tugas akhir/r');
 });
+
+Route::get('liat', 'PtkController@lihat1');
+Route::get('buat_ptk', 'PtkController@create');
+Route::post('buat_ptk', array('before' => 'csrf', 'uses' =>'PtkController@create'));
