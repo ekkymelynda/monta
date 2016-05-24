@@ -27,3 +27,11 @@ Route::post('c_TahunAjar', array('before' => 'csrf', 'uses' =>'TahunAjarControll
 Route::get('c_peserta_didik', function () {
     return view('peserta didik/c');
 });
+
+Route::get('r_PesertaDidik', 'PesertaDidikController@lihat');
+Route::get('c_PesertaDidik', 'PesertaDidikController@create');
+Route::post('c_PesertaDidik', array('before' => 'csrf', 'uses' =>'PesertaDidikController@create'));
+
+Route::get('c_peserta_didik', function () {
+    return view('peserta didik/c');
+});
