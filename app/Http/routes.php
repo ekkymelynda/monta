@@ -15,18 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('c_tahun_ajaran', function () {
-    return view('tahun ajaran/c');
-});
+// Route::get('c_tahun_ajaran', function () {
+//     return view('tahun ajaran/c');
+// <<<<<<< .mine
+// });
+
+Route::get('r_TahunAjar', 'TahunAjarController@lihat');
+Route::get('c_TahunAjar', 'TahunAjarController@create');
+Route::post('c_TahunAjar', array('before' => 'csrf', 'uses' =>'TahunAjarController@create'));
 
 Route::get('c_peserta_didik', function () {
     return view('peserta didik/c');
-});
-
-Route::get('r_tahun_ajaran', function () {
-    return view('tahun ajaran/r');
-});
-
-Route::get('r_peserta_didik', function () {
-    return view('peserta didik/r');
 });
