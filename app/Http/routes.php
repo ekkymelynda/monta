@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('tahun_ajaran', function () {
+Route::get('c_tahun_ajaran', function () {
     return view('tahun ajaran/c');
+});
+
+Route::get('c_peserta_didik', function () {
+    return view('peserta didik/c');
 });

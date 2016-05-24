@@ -6,22 +6,26 @@
 <body>
 	<h1>Peserta Didik</h1>
 <form action="">
-  ID tahun ajaran:<br>
-  <input type="number" name="" placeholder=""><br>
-  Nama tahun ajaran:<br>
+  ID peserta didik:<br>
   <input type="text" name="" placeholder=""><br>
-  Apakah periode aktif:<br>
-  <input type="boolean" name="" placeholder=""><br><br>
-  Tanggal mulai:<br>
+  Nama peserta didik:<br>
+  <input type="text" name="" placeholder=""><br>
+  Jenis kelamin:<br>
+  <input type="text" name="" placeholder=""><br>
+  Tanggal lahir:<br>
   <input type="date" name="" placeholder=""><br>
-  Tanggal selesai:<br>
-  <input type="date" name="" placeholder=""><br>
+  NIM/NRP:<br>
+  <input type="text" name="" placeholder=""><br>
+  Email:<br>
+  <input type="text" name="" placeholder=""><br>
+  Nomor handphone<br>
+  <input type="text" name="" placeholder=""><br>
   Create date:<br>
-  <input type="datetime" name="" placeholder=""><br><br>
-  Last update:<br>
-  <input type="datetime" name="" placeholder=""><br><br>
-  Expired date:<br>
-  <input type="datetime" name="" placeholder=""><br><br>
+  <input type="date" name="" placeholder=""><br>
+  Update date:<br>
+  <input type="date" name="" placeholder=""><br>
+  Soft delete:<br>
+  <input type="boolean" name="" placeholder=""><br>
 
   <input type="submit" value="Submit">
 </form>
