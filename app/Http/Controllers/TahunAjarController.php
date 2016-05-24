@@ -21,7 +21,7 @@ class TahunAjarController extends Controller
     {
         if (Request::isMethod('get')){
             # code ...
-            return view('coba');
+            return view('\tahun ajaran\c');
             }
         elseif (Request::isMethod('post')){
         	tahun_ajaran::insert(array(
@@ -34,4 +34,6 @@ class TahunAjarController extends Controller
     			'updated_at'	=> Input::get('updated_at'),
     			'expired_at'	=> Input::get('expired_at')
     		));
+			}
+	}
 }
