@@ -43,18 +43,6 @@ Route::get('r_stat_bimbing', function () {
     return view('status pembimbingan/r');
 });
 
-Route::get('r_TahunAjar', 'TahunAjarController@lihat');
-Route::get('c_TahunAjar', 'TahunAjarController@create');
-Route::post('c_TahunAjar', array('before' => 'csrf', 'uses' =>'TahunAjarController@create'));
-
-Route::get('c_peserta_didik', function () {
-    return view('peserta didik/c');
-});
-
-Route::get('c_peserta_didik', function () {
-    return view('peserta didik/c');
-});
-
 Route::get('c_pen_ten', function () {
     return view('pendidik dan tenaga kependidikan/c');
 });

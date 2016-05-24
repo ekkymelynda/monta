@@ -454,3 +454,11 @@ Stack trace:
 Stack trace:
 #0 {main}  
 >>>>>>> .r39
+[2016-05-24 22:10:36] local.ERROR: exception 'Symfony\Component\Console\Exception\CommandNotFoundException' with message 'There are no commands defined in the "controller" namespace.' in C:\xampp\htdocs\monta\trunk\vendor\symfony\console\Application.php:466
+Stack trace:
+#0 C:\xampp\htdocs\monta\trunk\vendor\symfony\console\Application.php(498): Symfony\Component\Console\Application->findNamespace('controller')
+#1 C:\xampp\htdocs\monta\trunk\vendor\symfony\console\Application.php(183): Symfony\Component\Console\Application->find('controller:make')
+#2 C:\xampp\htdocs\monta\trunk\vendor\symfony\console\Application.php(117): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\monta\trunk\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\xampp\htdocs\monta\trunk\artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
