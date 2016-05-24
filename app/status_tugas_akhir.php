@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class tahun_ajaran extends Model
+class status_tugas_akhir extends Model
 {
     //
     protected $table = 'status_tugas_akhir';
