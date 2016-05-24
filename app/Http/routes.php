@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('tahun_ajaran', function () {
+    return view('tahun ajaran/c');
+});
