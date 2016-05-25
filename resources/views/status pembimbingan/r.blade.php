@@ -20,8 +20,8 @@
       	@foreach ($item as $i)
         <td>{{$i->id_stat_bimbing}}</td>
         <td>{{$i->nm_stat_bimb}}</td>
-        <td>{{$i->create_at}}</td>
-        <td>{{$i->update_at}}</td>
+        <td>{{$i->created_at}}</td>
+        <td>{{$i->updated_at}}</td>
         <td>{{$i->expired_at}}</td>
       </tr>
       @endforeach

@@ -4,7 +4,6 @@
   <title>Monitoring Tugas Akhir</title>
 </head>
 <body>
-
 	<h1>Tahun Ajaran</h1>
 <form action="" method="post">
   {{ csrf_field() }}
@@ -13,7 +12,7 @@
   Nama Status Bimbingan:<br>
   <input type="text" name="nm_stat_bimb" placeholder=""><br>
   Create Date:<br>
-  <input type="date" name="create_at" placeholder=""><br><br>
+  <input type="date" name="create_at" placeholder=""><br>
   Last Update:<br>
   <input type="date" name="update_at" placeholder=""><br>
   Expired Date:<br>
