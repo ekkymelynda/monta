@@ -25,7 +25,7 @@ class status_pembimbinganController extends Controller
             }
         elseif (Request::isMethod('post')){
         	status_pembimbingan::insert(array(
-    			'id_stat_bimbing'	=> Input::get('id_stat_bimbingr'),
+    			'id_stat_bimbing'	=> Input::get('id_stat_bimbing'),
     			'nm_stat_bimbing'	=> Input::get('nm_stat_bimbing'),
     			'created_at'	=> Input::get('created_at'),
     			'updated_at'	=> Input::get('updated_at'),
