@@ -2,16 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+// use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
+use Request;
 
 use App\Http\Requests;
+use App\semester;
 
 class SemesterController extends Controller
 {
     //
     public function lihat(Request $request)
     {
-        $Semester['item'] = tahun_ajaran::all();
+        $Semester['item'] = semester::all();
         return view('\semester\r', $Semester);
     }
 
@@ -31,8 +34,8 @@ class SemesterController extends Controller
     			'id_thn_ajar'	=> Input::get('id_thn_ajar'),
     			'created_at'	=> Input::get('created_at'),
     			'updated_at'	=> Input::get('updated_at'),
-    			'expired_at'	=> Input::get('expired_at')
-    		));
+    			'expired_at'	=> Input::get('expired_at'),
+                'a_aktif'    => Input::get('a_aktif')    		));
 			}
 	}
 }

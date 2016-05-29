@@ -1,17 +1,19 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
+use Request;
+// use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\rumpun_ilmu;
 
 class RumpunIlmuController extends Controller
 {
     //
     public function lihat(Request $request)
     {
-        $RumpunIlmu['item'] = tahun_ajaran::all();
+        $RumpunIlmu['item'] = rumpun_ilmu::all();
         return view('\rumpun ilmu\r', $RumpunIlmu);
     }
 
@@ -22,7 +24,7 @@ class RumpunIlmuController extends Controller
             return view('\rumpun ilmu\c');
             }
         elseif (Request::isMethod('post')){
-        	tahun_ajaran::insert(array(
+        	rumpun_ilmu::insert(array(
     			'id_rumpun_ilmu'	=> Input::get('id_rumpun_ilmu'),
     			'nm_rumpun_ilmu'	=> Input::get('nm_rumpun_ilmu'),
     			'id_induk_rumpun_ilmu'	=> Input::get('id_induk_rumpun_ilmu'),

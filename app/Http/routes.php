@@ -23,6 +23,14 @@ Route::get('r_PesertaDidik', 'PesertaDidikController@lihat');
 Route::get('c_PesertaDidik', 'PesertaDidikController@create');
 Route::post('c_PesertaDidik', array('before' => 'csrf', 'uses' =>'PesertaDidikController@create'));
 
+Route::get('r_RumpunIlmu', 'RumpunIlmuController@lihat');
+Route::get('c_RumpunIlmu', 'RumpunIlmuController@create');
+Route::post('c_RumpunIlmu', array('before' => 'csrf', 'uses' =>'RumpunIlmuController@create'));
+
+Route::get('r_Semester', 'SemesterController@lihat');
+Route::get('c_Semester', 'SemesterController@create');
+Route::post('c_Semester', array('before' => 'csrf', 'uses' =>'SemesterController@create'));
+
 Route::get('c_akt_bimbing', function () {
     return view('aktivitas membimbing/c');
 });
@@ -94,3 +102,4 @@ Route::get('r_proposal_TA', function () {
 Route::get('liat', 'PtkController@lihat1');
 Route::get('buat_ptk', 'PtkController@create');
 Route::post('buat_ptk', array('before' => 'csrf', 'uses' =>'PtkController@create'));
+

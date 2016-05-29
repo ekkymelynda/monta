@@ -5,8 +5,8 @@ use Illuminate\Support\Facades\Input;
 use Request;
 use App\Http\Requests;
 use Ramsey\Uuid\Uuid;
-use App\peserta_didik;
-class cont_kmjnTAController extends Controller
+use App\model_kmjnTA;
+class cont_kmjnTA extends Controller
 {
     //
     public function lihat(Request $request)

@@ -1,7 +1,7 @@
 <?php
 namespace App;
 use Illuminate\Database\Eloquent\Model;
-class ptk extends Model
+class model_kmjnTA extends Model
 {
     //
     protected $table ='kemajuan_ta';
