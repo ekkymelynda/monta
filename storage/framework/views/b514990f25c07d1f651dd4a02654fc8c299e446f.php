@@ -5,7 +5,9 @@
 </head>
 <body>
 	<h1>Semester</h1>
-<form action="">
+<form action="" method="post">
+  <?php echo e(csrf_field()); ?>
+
   ID Semester:<br>
   <input type="text" name="id_smt" placeholder=""><br>
   Nama Semester:<br>
