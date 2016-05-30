@@ -1,30 +1,56 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Monitoring Tugas Akhir</title>
-</head>
-<body>
-	<h1>Kemajuan Tugas Akhir</h1>
-<form action="" method="post">
+@extends('layouts.dashboard')
+@section('page_heading','Kemajuan Tugas Akhir')
+@section('section')
+<div class="col-sm-9">
+<form role="form" action="" method="post">
   {{ csrf_field() }}
-  ID tahun ajaran:<br>
-  <input type="number" name="" placeholder=""><br>
-  Nama tahun ajaran:<br>
-  <input type="text" name="" placeholder=""><br>
-  Apakah periode aktif:<br>
-  <input type="boolean" name="" placeholder=""><br><br>
-  Tanggal mulai:<br>
-  <input type="date" name="" placeholder=""><br>
-  Tanggal selesai:<br>
-  <input type="date" name="" placeholder=""><br>
-  Create date:<br>
-  <input type="datetime" name="" placeholder=""><br><br>
-  Last update:<br>
-  <input type="datetime" name="" placeholder=""><br><br>
-  Expired date:<br>
-  <input type="datetime" name="" placeholder=""><br><br>
-
-  <input type="submit" value="Submit">
+  <div class="form-group">
+    <label>ID Kemajuan TA</label>
+    <input type="text" class="form-control" name="id_kemajuan_ta" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Tanggal Konsul</label>
+    <input type="date" class="form-control" name="tgl_konsul" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Deskripsi Kemajuan</label>
+    <textarea type="text" class="form-control" name="desk_kemajuan" placeholder=""></textarea>
+  </div>
+  <div class="form-group">
+    <label>Komentar</label>
+    <textarea type="text" class="form-control" name="desk_kemajuan" placeholder=""></textarea>
+  </div>
+  <div class="form-group">
+    <label>Disetujui</label>
+    <select name="a_disetujui" class="form-control">
+      <option value="0">Tidak</option>
+      <option value="1">Ya</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Tanggal setuju</label>
+    <input type="date" class="form-control" name="tgl_setuju" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>ID Bimbingan</label>
+    <input type="text" class="form-control" name="id_bimbingan" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Create at</label>
+    <input type="datetime" class="form-control" name="created_at" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Update at</label>
+    <input type="datetime" class="form-control" name="updated_at" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Soft delete</label>
+    <select name="soft_delete" class="form-control">
+      <option value="0">Tidak</option>
+      <option value="1">Ya</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-default">Submit Button</button>
 </form>
-	</body>
-</html>
+</div>
+@stop

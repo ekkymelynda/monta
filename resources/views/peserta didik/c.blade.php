@@ -1,4 +1,57 @@
-<!DOCTYPE html>
+@extends('layouts.dashboard')
+@section('page_heading','Pendidik dan Tenaga Kependidikan')
+@section('section')
+<div class="col-sm-9">
+<form role="form" action="" method="post">
+  {{ csrf_field() }}
+  <!--<div class="form-group">
+    <label>ID peserta didik</label>
+    <input type="text" class="form-control" name="id_pd" placeholder="">
+  </div>-->
+  <div class="form-group">
+    <label>Nama peserta didik</label>
+    <input type="text" class="form-control" name="nm_pd" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Jenis kelamin</label>
+    <input type="text" class="form-control" name="jk" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Tanggal lahir</label>
+    <input type="date" class="form-control" name="tgl_lahir" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>NIM/NRP</label>
+    <input type="text" class="form-control" name="nim" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" class="form-control" name="email" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Nomor handphone</label>
+    <input type="text" class="form-control" name="no_hp" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Create at</label>
+    <input type="datetime" class="form-control" name="created_at" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Update at</label>
+    <input type="datetime" class="form-control" name="updated_at" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Soft delete</label>
+    <select name="soft_delete" class="form-control">
+      <option value="0">Tidak</option>
+      <option value="1">Ya</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-default">Submit Button</button>
+</form>
+</div>
+@stop
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <title>Monitoring Tugas Akhir</title>
@@ -31,4 +84,4 @@
   <input type="submit" value="Submit">
 </form>
 	</body>
-</html>
+</html> -->
