@@ -32,6 +32,8 @@ class cont_kmjnTA extends Controller
                 'updated_at'    => Input::get('updated_at'),
                 'soft_delete'    => Input::get('soft_delete')
     		));
+        $cont_kmjnTA['item'] = model_kmjnTA::all();
+        return view('\kemajuan tugas akhir\r', $cont_kmjnTA);
 			}
 	}
 }

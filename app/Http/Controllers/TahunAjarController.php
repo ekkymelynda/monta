@@ -35,6 +35,8 @@ class TahunAjarController extends Controller
     			'updated_at'	=> Input::get('updated_at'),
     			'expired_at'	=> Input::get('expired_at')
     		));
+        $TahunAjar['item'] = tahun_ajaran::all();
+        return view('\tahun ajaran\r', $TahunAjar);
 			}
 	}
 }

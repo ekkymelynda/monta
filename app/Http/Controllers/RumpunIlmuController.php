@@ -32,6 +32,8 @@ class RumpunIlmuController extends Controller
     			'updated_at'	=> Input::get('updated_at'),
     			'expired_at'	=> Input::get('expired_at')
     		));
+        $RumpunIlmu['item'] = rumpun_ilmu::all();
+        return view('\rumpun ilmu\r', $RumpunIlmu);
 			}
 	}
 }

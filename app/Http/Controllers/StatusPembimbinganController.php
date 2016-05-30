@@ -31,6 +31,8 @@ class StatusPembimbinganController extends Controller
     			'updated_at'	=> Input::get('updated_at'),
     			'expired_at'	=> Input::get('expired_at')
     		));
+        $StatusPembimbingan['item'] = status_pembimbingan::all();
+        return view('\status pembimbingan\r', $StatusPembimbingan);
 			}
 	}
 }

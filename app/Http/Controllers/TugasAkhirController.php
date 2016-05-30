@@ -40,6 +40,8 @@ class TugasAkhirController extends Controller
                 'updated_at'    => Input::get('updated_at'),
                 'soft_delete'    => Input::get('soft_delete'),
     		));
+        $TugasAkhir['item'] = tugas_akhir::all();
+        return view('\tugas akhir\r', $TugasAkhir);
 			}
 	}
 }

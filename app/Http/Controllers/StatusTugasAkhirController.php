@@ -31,6 +31,8 @@ class StatusTugasAkhirController extends Controller
     			'updated_at'	=> Input::get('updated_at'),
     			'expired_at'	=> Input::get('expired_at')
     		));
+        $StatusTugasAkhir['item'] = status_tugas_akhir::all();
+        return view('\status tugas akhir\r', $StatusTugasAkhir);
 			}
 	}
 }

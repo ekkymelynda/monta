@@ -34,6 +34,8 @@ class PrasaranaController extends Controller
                 'updated_at'    => Input::get('updated_at'),
                 'soft_delete'    => Input::get('soft_delete')
     		));
+        $Prasarana['item'] = prasarana::all();
+        return view('\prasarana\r', $Prasarana);
 			}
 	}
 }

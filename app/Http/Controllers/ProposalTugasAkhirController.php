@@ -47,6 +47,8 @@ class ProposalTugasAkhirController extends Controller
     			'updated_at'	=> Input::get('updated_at'),
     			'soft_delete'	=> Input::get('soft_delete')
     		));
+        $ProposalTugasAkhir['item'] = proposal_tugas_akhir::all();
+        return view('\proposal tugas akhir\r', $ProposalTugasAkhir);
 			}
 	}
 }
