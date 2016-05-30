@@ -31,75 +31,31 @@ Route::get('r_Semester', 'SemesterController@lihat');
 Route::get('c_Semester', 'SemesterController@create');
 Route::post('c_Semester', array('before' => 'csrf', 'uses' =>'SemesterController@create'));
 
-Route::get('c_akt_bimbing', function () {
-    return view('aktivitas membimbing/c');
-});
+Route::get('r_AktMembimbing', 'AktivitasMembimbingController@lihat');
+Route::get('c_AktMembimbing', 'AktivitasMembimbingController@create');
+Route::post('r_AktMembimbing', array('before' => 'csrf', 'uses' =>'AktivitasMembimbingController@create'));
 
-Route::get('r_akt_bimbing', function () {
-    return view('aktivitas membimbing/r');
-});
-Route::get('c_TA', function () {
-    return view('proposal tugas akhir/c');
-});
-Route::get('r_TA', function () {
-    return view('proposal tugas akhir/r');
-});
-Route::get('c_stat_bimbing', function () {
-    return view('status pembimbingan/c');
-});
-Route::get('r_stat_bimbing', function () {
-    return view('status pembimbingan/r');
-});
+Route::get('r_Ta', 'TugasAkhirController@lihat');
+Route::get('c_Ta', 'TugasAkhirController@create');
+Route::post('r_Ta', array('before' => 'csrf', 'uses' =>'TugasAkhirController@create'));
 
-Route::get('c_pen_ten', function () {
-    return view('pendidik dan tenaga kependidikan/c');
-});
+Route::get('r_StatBimbing', 'StatusBimbingController@lihat');
+Route::get('c_StatBimbing', 'StatusBimbingController@create');
+Route::post('r_StatBimbing', array('before' => 'csrf', 'uses' =>'StatusBimbingController@create'));
 
-Route::get('r_pen_ten', function () {
-    return view('pendidik dan tenaga kependidikan/r');
-});
+Route::get('r_PenTen', 'PendidikTenagaController@lihat');
+Route::get('c_PenTen', 'PendidikTenagaController@create');
+Route::post('r_PenTen', array('before' => 'csrf', 'uses' =>'PendidikTenagaController@create'));
 
-Route::get('c_rumpun_ilmu', function () {
-    return view('rumpun ilmu/c');
-});
+Route::get('r_StatTa', 'StatusTaController@lihat');
+Route::get('c_StatTa', 'StatusTaController@create');
+Route::post('r_StatTa', array('before' => 'csrf', 'uses' =>'StatusTaController@create'));
 
-Route::get('r_rumpun_ilmu', function () {
-    return view('rumpun ilmu/r');
-});
+Route::get('r_KmjnTa', 'KmjnTaController@lihat');
+Route::get('c_KmjnTa', 'KmjnTaController@create');
+Route::post('r_KmjnTa', array('before' => 'csrf', 'uses' =>'KmjnTaController@create'));
 
-Route::get('c_stat_ta', function () {
-    return view('status tugas akhir/c');
-});
-
-Route::get('r_stat_ta', function () {
-    return view('status tugas akhir/r');
-});
-
-Route::get('r_semester', function () {
-    return view('semester/r');
-});
-
-Route::get('c_semester', function () {
-    return view('semester/c');
-});
-
-Route::get('r_kmjn_TA', function () {
-    return view('kemajuan tugas akhir/c');
-});
-
-Route::get('r_kmjn_TA', function () {
-    return view('kemajuan tugas akhir/r');
-});
-
-Route::get('c_proposal_TA', function () {
-    return view('proposal tugas akhir/c');
-});
-
-Route::get('r_proposal_TA', function () {
-    return view('proposal tugas akhir/r');
-});
-
-Route::get('liat', 'PtkController@lihat1');
-Route::get('buat_ptk', 'PtkController@create');
-Route::post('buat_ptk', array('before' => 'csrf', 'uses' =>'PtkController@create'));
+Route::get('r_ProposalTa', 'ProposalTaController@lihat');
+Route::get('c_ProposalTa', 'ProposalTaController@create');
+Route::post('r_ProposalTa', array('before' => 'csrf', 'uses' =>'ProposalTaController@create'));
 
