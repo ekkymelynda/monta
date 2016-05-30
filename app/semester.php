@@ -12,7 +12,15 @@ class semester extends Model
     public $incrementing = true;
 
     protected $fillable = [
-        'nm_smt', 'smt', 'tgl_mulai', 'tgl_selesai', 'id_thn_ajar', 'id_thn_ajar', 'created_at', 'updated_at', 'expired_at'
+        'nm_smt',
+        'smt',
+        'tgl_mulai',
+        'tgl_selesai',
+        'id_thn_ajar',
+        'id_thn_ajar',
+        'created_at',
+        'updated_at', 
+        'expired_at'
     ];
     public $timestamps = false;
 }

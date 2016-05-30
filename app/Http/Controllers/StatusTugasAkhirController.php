@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Input;
 use Request;
 
 use App\Http\Requests;
-use App\tahun_ajaran;
+use App\status_tugas_akhir;
 
 class StatusTugasAkhirController extends Controller
 {

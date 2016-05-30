@@ -12,7 +12,10 @@ class status_pembimbingan extends Model
     public $incrementing = true;
 
     protected $fillable = [
-        'nm_stat_bimbing', 'created_at', 'updated_at', 'expired_at'
+        'nm_stat_bimbing',
+        'created_at',
+        'updated_at',
+        'expired_at'
     ];
     public $timestamps = false;
 }

@@ -12,7 +12,15 @@ class peserta_didik extends Model
     public $incrementing = false;
 
     protected $fillable =[
-    	'nm_pd', 'jk', 'tgl_lahir', 'nim', 'email', 'no_hp', 'created_at', 'updated_at', 'soft_delete'
+    	'nm_pd',
+    	'jk',
+    	'tgl_lahir',
+    	'nim',
+    	'email',
+    	'no_hp',
+    	'created_at',
+    	'updated_at',
+    	'soft_delete'
     ];
 
     public $timestamps = false;

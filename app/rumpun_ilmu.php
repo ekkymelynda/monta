@@ -12,7 +12,11 @@ class rumpun_ilmu extends Model
     public $incrementing = true;
 
     protected $fillable = [
-        'nm_rumpun_ilmu', 'id_induk_rumpun_ilmu', 'created_at', 'updated_at', 'expired_at'
+        'nm_rumpun_ilmu',
+        'id_induk_rumpun_ilmu',
+        'created_at',
+        'updated_at',
+        'expired_at'
     ];
     public $timestamps = false;
 }
