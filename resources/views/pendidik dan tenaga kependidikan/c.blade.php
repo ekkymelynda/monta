@@ -4,11 +4,7 @@
 <div class="col-sm-9">
 <form role="form" action="" method="post">
   {{ csrf_field() }}
-  <div class="form-group">
-    <label>ID Pendidik dan Tenaga Kependidikan</label>
-    <input type="text" class="form-control" name="id_ptk" placeholder="">
-  </div>
-  <div class="form-group">
+    <div class="form-group">
     <label>Nama Pendidik dan Tenaga Kependidikan</label>
     <input type="text" class="form-control" name="nm_ptk" placeholder="">
   </div>
