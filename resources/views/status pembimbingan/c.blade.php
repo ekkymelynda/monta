@@ -6,11 +6,11 @@
   {{ csrf_field() }}
   <div class="form-group">
     <label>ID Status Bimbingan</label>
-    <input class="form-control" placeholder="Masukkan ID Status Bimbingan" name='id_stat_bimbing'>
+    <input class="form-control" placeholder="Masukkan ID Status Bimbingan" name="id_stat_bimbing">
   </div>
   <div class="form-group">
     <label>Nama Status Bimbingan</label>
-    <input class="form-control" placeholder="Masukkan Nama Status Bimbingan" name='nm_id_stat_bimbing'>
+    <input class="form-control" placeholder="Masukkan Nama Status Bimbingan" name="nm_stat_bimbing">
   </div>
   <div class="form-group">
     <label>Create date</label>
