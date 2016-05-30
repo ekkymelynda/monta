@@ -5,9 +5,8 @@
 </head>
 <body>
 	<h1>Tugas Akhir</h1>
-<form action="">
-  ID Tugas Akhir:<br>
-  <input type="text" name="" placeholder=""><br>
+<form action="" method="post">
+    {{ csrf_field() }}
   Judul Tugas Akhir:<br>
   <input type="text" name="" placeholder=""><br>
   Abstrak:<br>
