@@ -59,3 +59,6 @@ Route::get('r_ProposalTa', 'ProposalTugasAkhirController@lihat');
 Route::get('c_ProposalTa', 'ProposalTugasAkhirController@create');
 Route::post('r_ProposalTa', array('before' => 'csrf', 'uses' =>'ProposalTugasAkhirController@create'));
 
+Route::get('liat', 'PtkController@lihat1');
+Route::get('buat_ptk', 'PtkController@create');
+Route::post('buat_ptk', array('before' => 'csrf', 'uses' =>'PtkController@create'));
