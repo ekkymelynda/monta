@@ -45,11 +45,11 @@
   </div>
   <div class="form-group">
     <label>Create at</label>
-    <input type="datetime" class="form-control" name="created_at" placeholder="">
+    <input type="date" class="form-control" name="created_at" placeholder="">
   </div>
   <div class="form-group">
     <label>Update at</label>
-    <input type="datetime" class="form-control" name="updated_at" placeholder="">
+    <input type="date" class="form-control" name="updated_at" placeholder="">
   </div>
   <div class="form-group">
     <label>Soft delete</label>
