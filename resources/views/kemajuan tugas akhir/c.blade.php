@@ -4,10 +4,10 @@
 <div class="col-sm-9">
 <form role="form" action="" method="post">
   {{ csrf_field() }}
-  <div class="form-group">
+  <!-- <div class="form-group">
     <label>ID Kemajuan TA</label>
     <input type="text" class="form-control" name="id_kemajuan_ta" placeholder="">
-  </div>
+  </div> -->
   <div class="form-group">
     <label>Tanggal Konsul</label>
     <input type="date" class="form-control" name="tgl_konsul" placeholder="">
@@ -18,7 +18,7 @@
   </div>
   <div class="form-group">
     <label>Komentar</label>
-    <textarea type="text" class="form-control" name="desk_kemajuan" placeholder=""></textarea>
+    <textarea type="text" class="form-control" name="komentar" placeholder=""></textarea>
   </div>
   <div class="form-group">
     <label>Disetujui</label>
@@ -37,11 +37,11 @@
   </div>
   <div class="form-group">
     <label>Create at</label>
-    <input type="datetime" class="form-control" name="created_at" placeholder="">
+    <input type="date" class="form-control" name="created_at" placeholder="">
   </div>
   <div class="form-group">
     <label>Update at</label>
-    <input type="datetime" class="form-control" name="updated_at" placeholder="">
+    <input type="date" class="form-control" name="updated_at" placeholder="">
   </div>
   <div class="form-group">
     <label>Soft delete</label>
