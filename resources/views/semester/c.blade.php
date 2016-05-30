@@ -18,7 +18,7 @@
   Tanggal mulai:<br>
   <input type="date" name="tgl_mulai" placeholder=""><br>
   Tanggal selesai:<br>
-  <input type="date" name="id_thn_ajar" placeholder=""><br>
+  <input type="date" name="tgl_selesai" placeholder=""><br>
   ID Tahun Ajaran:<br>
   <input type="number" name="id_thn_ajar" placeholder=""><br>
   Create date:<br>
