@@ -25,6 +25,7 @@
         <td>{{$i->id_smt}}</td>
         <td>{{$i->nm_smt}}</td>
         <td>{{$i->smt}}</td>
+        <td>{{$i->a_aktif}}</td>
         <td>{{$i->tgl_mulai}}</td>
         <td>{{$i->tgl_selesai}}</td>
         <td>{{$i->id_thn_ajar}}</td>

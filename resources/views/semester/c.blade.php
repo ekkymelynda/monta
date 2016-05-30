@@ -37,7 +37,17 @@
   </div>
     <div class="form-group">
     <label>ID Tahun Ajaran</label>
-    <input class="form-control" placeholder="Masukkan ID Tahun Ajaran" name='id_thn_ajar'>
+    <select name="id_thn_ajar" class="form-control">
+      @foreach ($item1 as $i)
+      <option>{{$i->id_thn_ajar}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Soft delete</label>
+    <select name="soft_delete" class="form-control">
+      <option value="0">Tidak</option>
+      <option value="1">Ya</option>
+    </select>
   </div>
   <div class="form-group">
     <label>Last update</label>
