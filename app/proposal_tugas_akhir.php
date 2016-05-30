@@ -8,12 +8,12 @@ class proposal_tugas_akhir extends Model
 {
     //
     protected $table = 'proposal_tugas_akhir';
-    protected $primarykey = 'id_prob_ta';
+    protected $primarykey = 'id_prop_ta';
     public $incrementing = false;
 
     protected $fillable = [
-        'judul_prob_ta',
-        'abstrak_prob_ta',
+        'judul_prop_ta',
+        'abstrak_prop_ta',
         'kata_kunci',
         'tgl_ajuan',
         'revisi_ke',
@@ -22,7 +22,7 @@ class proposal_tugas_akhir extends Model
         'tenggat_wkt_perbaikan',
         'tgl_setuju',
         'id_prev_prov_ta',
-        'id_stat_prob_ta',
+        'id_stat_prop_ta',
         'id_sidang',
         'id_rumpun_ilmu',
         'id_bimbing_utama',
