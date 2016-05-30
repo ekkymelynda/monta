@@ -33,6 +33,8 @@ class JenisSidangController extends Controller
     			'updated_at'	=> Input::get('updated_at'),
     			'expired_at'	=> Input::get('expired_at')
               ));
+        	$jenis_sidang['item'] = jenis_sidang::all();
+        	return view('\jenis sidang\r', $jenis_sidang);
 			}
 	}
 }
