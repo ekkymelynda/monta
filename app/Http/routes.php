@@ -39,23 +39,23 @@ Route::get('r_Ta', 'TugasAkhirController@lihat');
 Route::get('c_Ta', 'TugasAkhirController@create');
 Route::post('r_Ta', array('before' => 'csrf', 'uses' =>'TugasAkhirController@create'));
 
-Route::get('r_StatBimbing', 'StatusBimbingController@lihat');
-Route::get('c_StatBimbing', 'StatusBimbingController@create');
-Route::post('r_StatBimbing', array('before' => 'csrf', 'uses' =>'StatusBimbingController@create'));
+Route::get('r_StatBimbing', 'StatusPembimbinganController@lihat');
+Route::get('c_StatBimbing', 'StatusPembimbinganController@create');
+Route::post('r_StatBimbing', array('before' => 'csrf', 'uses' =>'StatusPembimbinganController@create'));
 
 Route::get('r_PenTen', 'PendidikTenagaController@lihat');
 Route::get('c_PenTen', 'PendidikTenagaController@create');
 Route::post('r_PenTen', array('before' => 'csrf', 'uses' =>'PendidikTenagaController@create'));
 
-Route::get('r_StatTa', 'StatusTaController@lihat');
-Route::get('c_StatTa', 'StatusTaController@create');
-Route::post('r_StatTa', array('before' => 'csrf', 'uses' =>'StatusTaController@create'));
+Route::get('r_StatTa', 'StatusTugasAkhirController@lihat');
+Route::get('c_StatTa', 'StatusTugasAkhirController@create');
+Route::post('r_StatTa', array('before' => 'csrf', 'uses' =>'StatusTugasAkhirController@create'));
 
-Route::get('r_KmjnTa', 'KmjnTaController@lihat');
-Route::get('c_KmjnTa', 'KmjnTaController@create');
-Route::post('r_KmjnTa', array('before' => 'csrf', 'uses' =>'KmjnTaController@create'));
+Route::get('r_KmjnTa', 'cont_kmjnTA@lihat');
+Route::get('c_KmjnTa', 'cont_kmjnTA@create');
+Route::post('r_KmjnTa', array('before' => 'csrf', 'uses' =>'cont_kmjnTA@create'));
 
-Route::get('r_ProposalTa', 'ProposalTaController@lihat');
-Route::get('c_ProposalTa', 'ProposalTaController@create');
-Route::post('r_ProposalTa', array('before' => 'csrf', 'uses' =>'ProposalTaController@create'));
+Route::get('r_ProposalTa', 'ProposalTugasAkhirController@lihat');
+Route::get('c_ProposalTa', 'ProposalTugasAkhirController@create');
+Route::post('r_ProposalTa', array('before' => 'csrf', 'uses' =>'ProposalTugasAkhirController@create'));
 
