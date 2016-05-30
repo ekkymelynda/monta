@@ -25,7 +25,7 @@ class SemesterController extends Controller
             return view('\semester\c');
             }
         elseif (Request::isMethod('post')){
-        	tahun_ajaran::insert(array(
+        	semester::insert(array(
     			'id_smt'	=> Input::get('id_smt'),
     			'nm_smt'	=> Input::get('nm_smt'),
     			'smt'	=> Input::get('smt'),

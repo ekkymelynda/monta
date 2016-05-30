@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Input;
 use Request;
 
 use App\Http\Requests;
+use Ramsey\Uuid\Uuid;
 use App\tugas_akhir;
 
 class TugasAkhirController extends Controller
@@ -25,7 +26,7 @@ class TugasAkhirController extends Controller
             }
         elseif (Request::isMethod('post')){
         	tugas_akhir::insert(array(
-    			'id_ta'	=> Input::get('id_ta'),
+    			'id_ta'	=> Uuid::uuid4()->getHex(),
     			'judul_ta'	=> Input::get('judul_ta'),
     			'abstrak'	=> Input::get('abstrak'),
     			'kata_kunci'	=> Input::get('kata_kunci'),

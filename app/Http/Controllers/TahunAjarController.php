@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Input;
 use Request;
 
 use App\Http\Requests;
+use Ramsey\Uuid\Uuid;
 use App\tahun_ajaran;
 
 class TahunAjarController extends Controller
@@ -25,7 +26,7 @@ class TahunAjarController extends Controller
             }
         elseif (Request::isMethod('post')){
         	tahun_ajaran::insert(array(
-    			'id_thn_ajar'	=> Input::get('id_thn_ajar'),
+    			'id_thn_ajar'	=> Uuid::uuid4()->getHex(),
     			'nm_thn_ajar'	=> Input::get('nm_thn_ajar'),
     			'a_aktif'	=> Input::get('a_aktif'),
     			'tgl_mulai'	=> Input::get('tgl_mulai'),

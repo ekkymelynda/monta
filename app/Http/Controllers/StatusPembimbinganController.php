@@ -9,7 +9,7 @@ use Request;
 use App\Http\Requests;
 use App\status_pembimbingan;
 
-class status_pembimbinganController extends Controller
+class StatusPembimbinganController extends Controller
 {
     public function lihat(Request $request)
     {
@@ -26,7 +26,7 @@ class status_pembimbinganController extends Controller
         elseif (Request::isMethod('post')){
         	status_pembimbingan::insert(array(
     			'id_stat_bimbing'	=> Input::get('id_stat_bimbing'),
-    			'nm_stat_bimbing'	=> Input::get('nm_stat_bimbing'),
+    			'nm_stat_bimb'	=> Input::get('nm_stat_bimbing'),
     			'created_at'	=> Input::get('created_at'),
     			'updated_at'	=> Input::get('updated_at'),
     			'expired_at'	=> Input::get('expired_at')
