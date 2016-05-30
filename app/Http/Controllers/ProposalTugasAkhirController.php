@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Input;
 use Request;
 
 use App\Http\Requests;
+use Ramsey\Uuid\Uuid;
 use App\proposal_tugas_akhir;
 
 class ProposalTugasAkhirController extends Controller
@@ -25,8 +26,8 @@ class ProposalTugasAkhirController extends Controller
             }
         elseif (Request::isMethod('post')){
         	proposal_tugas_akhir::insert(array(
-    			'id_prob_ta'	=> Input::get('id_prob_ta'),
-    			'abstrak_prob_ta'	=> Input::get('abstrak_prob_ta'),
+    			'id_prop_ta'	=> Uuid::uuid4()->getHex(),
+    			'abstrak_prop_ta'	=> Input::get('abstrak_prop_ta'),
           'kata_kunci'	=> Input::get('kata_kunci'),
           'tgl_ajuan'	=> Input::get('tgl_ajuan'),
           'revisi_ke'	=> Input::get('revisi_ke'),
@@ -35,7 +36,7 @@ class ProposalTugasAkhirController extends Controller
           'tenggat_wkt_perbaikan'	=> Input::get('tenggat_wkt_perbaikan'),
           'tgl_setuju'	=> Input::get('tgl_setuju'),
           'id_prev_prov_ta'	=> Input::get('id_prev_prov_ta'),
-          'id_stat_prob_ta'	=> Input::get('id_stat_prob_ta'),
+          'id_stat_prop_ta'	=> Input::get('id_stat_prop_ta'),
           'id_sidang'	=> Input::get('id_sidang'),
           'id_rumpun_ilmu'	=> Input::get('id_rumpun_ilmu'),
           'id_bimbing_utama'	=> Input::get('id_bimbing_utama'),

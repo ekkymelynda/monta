@@ -25,8 +25,8 @@ class StatusTugasAkhirController extends Controller
             }
         elseif (Request::isMethod('post')){
         	status_tugas_akhir::insert(array(
-    			'id_stat_ta'	=> Input::get('id_thn_ajar'),
-    			'nm_stat_ta'	=> Input::get('nm_thn_ajar'),
+    			'id_stat_ta'	=> Input::get('id_stat_ta'),
+    			'nm_stat_ta'	=> Input::get('nm_stat_ta'),
     			'created_at'	=> Input::get('created_at'),
     			'updated_at'	=> Input::get('updated_at'),
     			'expired_at'	=> Input::get('expired_at')

@@ -21,7 +21,7 @@ class cont_kmjnTA extends Controller
             return view('\kemajuan tugas akhir\c');
             }
         elseif (Request::isMethod('post')){
-        	peserta_didik::insert(array(
+        	model_kmjnTA::insert(array(
     			'id_kemajuan_ta'	=> Uuid::uuid4()->getHex(),
     			'tgl_konsul'	=> Input::get('tgl_konsul'),
     			'desk_kemajuan'	=> Input::get('desk_kemajuan'),
