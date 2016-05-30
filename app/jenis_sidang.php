@@ -15,7 +15,7 @@ class jenis_sidang extends Model
     	'nm_jns_sidang',
     	'created_at',
     	'updated_at',
-    	'soft_delete'
+    	'expired_at'
     ];
 
     public $timestamps = false;

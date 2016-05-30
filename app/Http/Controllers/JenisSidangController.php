@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Input;
 use Request;
 
 use App\Http\Requests;
-use App\semester;
+use App\jenis_sidang;
 
 class JenisSidangController extends Controller
 {
