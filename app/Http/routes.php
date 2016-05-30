@@ -63,6 +63,10 @@ Route::get('r_JenisSidang', 'JenisSidangController@lihat');
 Route::get('c_JenisSidang', 'JenisSidangController@create');
 Route::post('c_JenisSidang', array('before' => 'csrf', 'uses' =>'JenisSidangController@create'));
 
+Route::get('r_Prasarana', 'PrasaranaController@lihat');
+Route::get('c_Prasarana', 'PrasaranaController@create');
+Route::post('c_Prasarana', array('before' => 'csrf', 'uses' =>'PrasaranaController@create'));
+
 Route::get('liat', 'PtkController@lihat1');
 Route::get('buat_ptk', 'PtkController@create');
 Route::post('buat_ptk', array('before' => 'csrf', 'uses' =>'PtkController@create'));
