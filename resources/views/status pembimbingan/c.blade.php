@@ -1,8 +1,8 @@
 @extends('layouts.dashboard')
-@section('page_heading','Tahun Ajaran')
+@section('page_heading','Status Pembimbingan')
 @section('section')
 <div class="col-sm-9">
-<form role="form" action="" method="post">
+<form role="form" method="post">
   {{ csrf_field() }}
   <div class="form-group">
     <label>ID Status Bimbingan</label>
