@@ -4,7 +4,7 @@
   <title>Monitoring Tugas Akhir</title>
 </head>
 <body>
-  <h1>Tahun Ajaran</h1>
+  <h1>Semester</h1>
 <table>
     <thead>
       <tr>
@@ -22,15 +22,18 @@
     </thead>
     <tbody>
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        @foreach ($item as $i)
+        <td>{{$i->id_smt}}</td>
+        <td>{{$i->nm_smt}}</td>
+        <td>{{$i->smt}}</td>
+        <td>{{$i->tgl_mulai}}</td>
+        <td>{{$i->tgl_selesai}}</td>
+        <td>{{$i->id_thn_ajar}}</td>
+        <td>{{$i->created_at}}</td>
+        <td>{{$i->updated_at}}</td>
+        <td>{{$i->expired_at}}</td>
       </tr>
+      @endforeach
     </tbody>
 </table>
   </body>

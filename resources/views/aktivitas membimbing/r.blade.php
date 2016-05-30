@@ -4,7 +4,7 @@
   <title>Monitoring Tugas Akhir</title>
 </head>
 <body>
-  <h1>Tahun Ajaran</h1>
+  <h1>Aktivitas Membimbing</h1>
 <table>
     <thead>
       <tr>

@@ -5,7 +5,8 @@
 </head>
 <body>
 	<h1>Tahun Ajaran</h1>
-<form action="">
+<form action="" method="post">
+  {{ csrf_field() }}
   Judul Proposal TA:<br>
   <input type="input" name="" placeholder=""><br>
   Abstrak Proposal TA:<br>

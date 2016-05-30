@@ -4,7 +4,7 @@
   <title>Monitoring Tugas Akhir</title>
 </head>
 <body>
-  <h1>Rumpun Ilmu</h1>
+  <h1>Pendidik dan Tenaga Kependidikan</h1>
 <table>
     <thead>
       <tr>
@@ -26,17 +26,8 @@
     </thead>
     <tbody>
       <tr>
-      	@foreach ($item as $i)
-        <td>{{$i->id_thn_ajar}}</td>
-        <td>{{$i->nm_thn_ajar}}</td>
-        <td>{{$i->a_aktif}}</td>
-        <td>{{$i->tgl_mulai}}</td>
-        <td>{{$i->tgl_selesai}}</td>
-        <td>{{$i->created_at}}</td>
-        <td>{{$i->updated_at}}</td>
-        <td>{{$i->expired_at}}</td>
+        <td></td>
       </tr>
-      @endforeach
     </tbody>
 </table>
   </body>

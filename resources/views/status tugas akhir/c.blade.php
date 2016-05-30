@@ -5,7 +5,8 @@
 </head>
 <body>
   <h1>Status Tugas Akhir</h1>
-<form action="">
+<form action="" method="post">
+  {{ csrf_field() }}
   ID Status Tugas Akhir:<br>
   <input type="text" name="" placeholder=""><br>
   Nama Status Tugas Akhir:<br>

@@ -35,7 +35,7 @@
   <title>Monitoring Tugas Akhir</title>
 </head>
 <body>
-	<h1>Tahun Ajaran</h1>
+	<h1>Status Pembimbing</h1>
 <form action="" method="post">
   {{ csrf_field() }}
   ID Status Bimbingan:<br>

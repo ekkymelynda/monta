@@ -9,7 +9,7 @@ use Request;
 use App\Http\Requests;
 use App\proposal_tugas_akhir;
 
-class proposal_tugas_akhirController extends Controller
+class ProposalTugasAkhirController extends Controller
 {
     public function lihat(Request $request)
     {

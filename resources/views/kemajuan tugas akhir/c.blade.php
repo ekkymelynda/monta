@@ -4,8 +4,9 @@
   <title>Monitoring Tugas Akhir</title>
 </head>
 <body>
-	<h1>Tahun Ajaran</h1>
-<form action="">
+	<h1>Kemajuan Tugas Akhir</h1>
+<form action="" method="post">
+  {{ csrf_field() }}
   ID tahun ajaran:<br>
   <input type="number" name="" placeholder=""><br>
   Nama tahun ajaran:<br>

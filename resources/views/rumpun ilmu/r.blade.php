@@ -19,11 +19,9 @@
     <tbody>
       <tr>
       	@foreach ($item as $i)
-        <td>{{$i->id_thn_ajar}}</td>
-        <td>{{$i->nm_thn_ajar}}</td>
-        <td>{{$i->a_aktif}}</td>
-        <td>{{$i->tgl_mulai}}</td>
-        <td>{{$i->tgl_selesai}}</td>
+        <td>{{$i->id_rumpun_ilmu}}</td>
+        <td>{{$i->nm_rumpun_ilmu}}</td>
+        <td>{{$i->id_induk_rumpun_ilmu}}</td>
         <td>{{$i->created_at}}</td>
         <td>{{$i->updated_at}}</td>
         <td>{{$i->expired_at}}</td>

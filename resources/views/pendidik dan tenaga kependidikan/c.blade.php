@@ -5,7 +5,8 @@
 </head>
 <body>
 	<h1>Pendidik dan Tenaga Kependidikan</h1>
-<form action="">
+<form action="" method="post">
+  {{ csrf_field() }}
   ID PTK:<br>
   <input type="text" name="" placeholder=""><br>
   Nama PTK:<br>
