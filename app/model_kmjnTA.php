@@ -20,3 +20,4 @@ class model_kmjnTA extends Model
         'soft_delete'
     ];
     public $timestamps = false;
+}
