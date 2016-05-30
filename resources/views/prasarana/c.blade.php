@@ -4,10 +4,10 @@
 <div class="col-sm-9">
 <form role="form" action="" method="post">
   {{ csrf_field() }}
-  <div class="form-group">
+  <!-- <div class="form-group">
     <label>ID Prasarana</label>
     <input class="form-control" placeholder="Masukkan ID" name='id_prasarana'>
-  </div>
+  </div> -->
   <div class="form-group">
     <label>Nama rumpun ilmu</label>
     <input class="form-control" placeholder="Masukkan nama" name='nm_prasarana'>
@@ -21,8 +21,11 @@
     <input type="date" name="updated_at" placeholder="">
   </div>
   <div class="form-group">
-    <label>Expired date</label>
-    <input type="date" name="expired_at" placeholder="">
+    <label>Soft delete</label>
+    <select name="soft_delete" class="form-control">
+      <option value="0">Tidak</option>
+      <option value="1">Ya</option>
+    </select>
   </div>
   <button type="submit" class="btn btn-default">Submit Button</button>
 </form>
