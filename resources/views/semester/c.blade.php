@@ -1,4 +1,58 @@
-<!DOCTYPE html>
+@extends('layouts.dashboard')
+@section('page_heading','Semester')
+@section('section')
+<div class="col-sm-9">
+<form role="form" action="" method="post">
+  {{ csrf_field() }}
+  <div class="form-group">
+    <label>ID Semester</label>
+    <input type="text" class="form-control" placeholder="Masukkan ID" name='id_smt'>
+  </div>
+  <div class="form-group">
+    <label>Nama Semester</label>
+    <input type="text" class="form-control" placeholder="Masukkan nama" name='nm_smt'>
+  </div>
+  <div class="form-group">
+    <label>Semester</label>
+    <input type="number" class="form-control" placeholder="Masukkan semester" name='smt'>
+  </div>
+  <div class="form-group">
+    <label>Periode Aktif</label>
+    <select name="a_aktif" class="form-control">
+      <option value="0">Tidak</option>
+      <option value="1">Ya</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Tanggal mulai</label>
+    <input type="date" name="tgl_mulai" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Tanggal selesai</label>
+    <input type="date" name="tgl_selesai" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Create date</label>
+    <input type="date" name="created_at" placeholder="">
+  </div>
+    <div class="form-group">
+    <label>ID Tahun Ajaran</label>
+    <input class="form-control" placeholder="Masukkan ID Tahun Ajaran" name='id_thn_ajar'>
+  </div>
+  <div class="form-group">
+    <label>Last update</label>
+    <input type="date" name="updated_at" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Expired date</label>
+    <input type="date" name="expired_at" placeholder="">
+  </div>
+  <button type="submit" class="btn btn-default">Submit Button</button>
+</form>
+</div>
+@stop
+
+<!--<!DOCTYPE html>
 <html>
 <head>
   <title>Semester</title>
@@ -31,4 +85,4 @@
   <input type="submit" value="Submit">
 </form>
 	</body>
-</html>
+</html> -->
