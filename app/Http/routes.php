@@ -70,6 +70,10 @@ Route::get('r_Prasarana', 'PrasaranaController@lihat');
 Route::get('c_Prasarana', 'PrasaranaController@create');
 Route::post('c_Prasarana', array('before' => 'csrf', 'uses' =>'PrasaranaController@create'));
 
+Route::get('r_sidang', 'sidangController@lihat');
+Route::get('c_sidang', 'sidangController@create');
+Route::post('c_sidang', array('before' => 'csrf', 'uses' =>'sidangController@create'));
+
 Route::get('liat', 'PtkController@lihat1');
 Route::get('buat_ptk', 'PtkController@create');
 Route::post('buat_ptk', array('before' => 'csrf', 'uses' =>'PtkController@create'));

@@ -8,7 +8,7 @@ use Request;
 
 use App\Http\Requests;
 use Ramsey\Uuid\Uuid;
-use App\peserta_didik;
+use App\sidang;
 class sidangController extends Controller
 {
     //
@@ -25,7 +25,7 @@ class sidangController extends Controller
             return view('\sidang\c');
             }
         elseif (Request::isMethod('post')){
-        	peserta_didik::insert(array(
+        	sidang::insert(array(
     			'id_sidang'	=> Uuid::uuid4()->getHex(),
     			'judul_sidang'	=> Input::get('judul_sidang'),
     			'tgl_sidang'	=> Input::get('tgl_sidang'),

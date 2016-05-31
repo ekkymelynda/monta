@@ -37,7 +37,8 @@ class SemesterController extends Controller
     			'created_at'	=> Input::get('created_at'),
     			'updated_at'	=> Input::get('updated_at'),
     			'expired_at'	=> Input::get('expired_at'),
-                'a_aktif'    => Input::get('a_aktif')    		));
+                'a_aktif'    => Input::get('a_aktif')    		
+                ));
             $Semester['item'] = semester::all();
             return view('\semester\r', $Semester);
 			}
