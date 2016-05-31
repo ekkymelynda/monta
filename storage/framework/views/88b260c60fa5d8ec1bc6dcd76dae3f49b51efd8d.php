@@ -19,6 +19,7 @@
   <div class="form-group">
     <label>Tanggal lahir</label>
     <input type="date" class="form-control" name="tgl_lahir" placeholder="">
+  </div>
   <div class="form-group">
     <label>NIM/NRP</label>
     <input type="text" class="form-control" name="nim" placeholder="">

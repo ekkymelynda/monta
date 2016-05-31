@@ -9,7 +9,7 @@
     <input class="form-control" placeholder="Masukkan ID" name='id_prasarana'>
   </div> -->
   <div class="form-group">
-    <label>Nama rumpun ilmu</label>
+    <label>Nama prasarana</label>
     <input class="form-control" placeholder="Masukkan nama" name='nm_prasarana'>
   </div>
   <div class="form-group">
