@@ -353,7 +353,7 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <li >
+                        <!--<li >
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Aktivitas Membimbing<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li {{ (Request::is('*panels') ? 'class="active"' : '') }}>
@@ -362,7 +362,7 @@
                                 <li {{ (Request::is('*buttons') ? 'class="active"' : '') }}>
                                     <a href="{{ url ('buttons' ) }}">Lihat</a>
                                 </li>
-                                <!--<li {{ (Request::is('*notifications') ? 'class="active"' : '') }}>
+                                <!-- <li {{ (Request::is('*notifications') ? 'class="active"' : '') }}>
                                     <a href="{{ url('notifications') }}">Alerts</a>
                                 </li>
                                 <li {{ (Request::is('*typography') ? 'class="active"' : '') }}>
@@ -374,17 +374,17 @@
                                 <li {{ (Request::is('*grid') ? 'class="active"' : '') }}>
                                     <a href="{{ url ('grid') }}">Grid</a>
                                 </li>-->
-                            </ul>
+                            <!--</ul> -->
                             <!-- /.nav-second-level -->
-                        </li>
+                        <!-- </li> -->
                         <li >
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Tugas Akhir<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li {{ (Request::is('*panels') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('panels') }}">Buat</a>
+                                    <a href="{{ url ('c_Ta') }}">Buat</a>
                                 </li>
                                 <li {{ (Request::is('*buttons') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('buttons' ) }}">Lihat</a>
+                                    <a href="{{ url ('r_Ta' ) }}">Lihat</a>
                                 </li>
                                 <!--<li {{ (Request::is('*notifications') ? 'class="active"' : '') }}>
                                     <a href="{{ url('notifications') }}">Alerts</a>
@@ -405,10 +405,10 @@
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Status Pembimbingan<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li {{ (Request::is('*panels') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('panels') }}">Buat</a>
+                                    <a href="{{ url ('c_StatBimbing') }}">Buat</a>
                                 </li>
                                 <li {{ (Request::is('*buttons') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('buttons' ) }}">Lihat</a>
+                                    <a href="{{ url ('r_StatBimbing' ) }}">Lihat</a>
                                 </li>
                                 <!--<li {{ (Request::is('*notifications') ? 'class="active"' : '') }}>
                                     <a href="{{ url('notifications') }}">Alerts</a>
@@ -429,10 +429,10 @@
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Pendidik dan Tenaga Pendidik<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li {{ (Request::is('*panels') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('panels') }}">Buat</a>
+                                    <a href="{{ url ('c_PenTen') }}">Buat</a>
                                 </li>
                                 <li {{ (Request::is('*buttons') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('buttons' ) }}">Lihat</a>
+                                    <a href="{{ url ('r_PenTen' ) }}">Lihat</a>
                                 </li>
                                 <!--<li {{ (Request::is('*notifications') ? 'class="active"' : '') }}>
                                     <a href="{{ url('notifications') }}">Alerts</a>
@@ -453,10 +453,10 @@
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Status TA<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li {{ (Request::is('*panels') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('panels') }}">Buat</a>
+                                    <a href="{{ url ('c_StatTa') }}">Buat</a>
                                 </li>
                                 <li {{ (Request::is('*buttons') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('buttons' ) }}">Lihat</a>
+                                    <a href="{{ url ('r_StatTa' ) }}">Lihat</a>
                                 </li>
                                 <!--<li {{ (Request::is('*notifications') ? 'class="active"' : '') }}>
                                     <a href="{{ url('notifications') }}">Alerts</a>
@@ -477,10 +477,10 @@
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Kemajuan TA<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li {{ (Request::is('*panels') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('panels') }}">Buat</a>
+                                    <a href="{{ url ('c_KmjnTa') }}">Buat</a>
                                 </li>
                                 <li {{ (Request::is('*buttons') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('buttons' ) }}">Lihat</a>
+                                    <a href="{{ url ('r_KmjnTa' ) }}">Lihat</a>
                                 </li>
                                 <!--<li {{ (Request::is('*notifications') ? 'class="active"' : '') }}>
                                     <a href="{{ url('notifications') }}">Alerts</a>
@@ -501,10 +501,10 @@
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Proposal TA<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li {{ (Request::is('*panels') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('panels') }}">Buat</a>
+                                    <a href="{{ url ('c_ProposalTa') }}">Buat</a>
                                 </li>
                                 <li {{ (Request::is('*buttons') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('buttons' ) }}">Lihat</a>
+                                    <a href="{{ url ('r_ProposalTa' ) }}">Lihat</a>
                                 </li>
                                 <!--<li {{ (Request::is('*notifications') ? 'class="active"' : '') }}>
                                     <a href="{{ url('notifications') }}">Alerts</a>
