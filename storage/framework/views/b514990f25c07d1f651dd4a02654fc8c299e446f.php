@@ -1,4 +1,68 @@
-<!DOCTYPE html>
+<?php $__env->startSection('page_heading','Semester'); ?>
+<?php $__env->startSection('section'); ?>
+<div class="col-sm-9">
+<form role="form" action="" method="post">
+  <?php echo e(csrf_field()); ?>
+
+  <div class="form-group">
+    <label>ID Semester</label>
+    <input type="text" class="form-control" placeholder="Masukkan ID" name='id_smt'>
+  </div>
+  <div class="form-group">
+    <label>Nama Semester</label>
+    <input type="text" class="form-control" placeholder="Masukkan nama" name='nm_smt'>
+  </div>
+  <div class="form-group">
+    <label>Semester</label>
+    <input type="number" class="form-control" placeholder="Masukkan semester" name='smt'>
+  </div>
+  <div class="form-group">
+    <label>Periode Aktif</label>
+    <select name="a_aktif" class="form-control">
+      <option value="0">Tidak</option>
+      <option value="1">Ya</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Tanggal mulai</label>
+    <input type="date" name="tgl_mulai" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Tanggal selesai</label>
+    <input type="date" name="tgl_selesai" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Create date</label>
+    <input type="date" name="created_at" placeholder="">
+  </div>
+    <div class="form-group">
+    <label>ID Tahun Ajaran</label>
+    <select name="id_thn_ajar" class="form-control">
+      <?php foreach($item1 as $i): ?>
+      <option><?php echo e($i->id_thn_ajar); ?></option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Soft delete</label>
+    <select name="soft_delete" class="form-control">
+      <option value="0">Tidak</option>
+      <option value="1">Ya</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Last update</label>
+    <input type="date" name="updated_at" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Expired date</label>
+    <input type="date" name="expired_at" placeholder="">
+  </div>
+  <button type="submit" class="btn btn-default">Submit Button</button>
+</form>
+</div>
+<?php $__env->stopSection(); ?>
+
+<!--<!DOCTYPE html>
 <html>
 <head>
   <title>Semester</title>
@@ -19,7 +83,7 @@
   Tanggal mulai:<br>
   <input type="date" name="tgl_mulai" placeholder=""><br>
   Tanggal selesai:<br>
-  <input type="date" name="id_thn_ajar" placeholder=""><br>
+  <input type="date" name="tgl_selesai" placeholder=""><br>
   ID Tahun Ajaran:<br>
   <input type="number" name="id_thn_ajar" placeholder=""><br>
   Create date:<br>
@@ -32,4 +96,5 @@
   <input type="submit" value="Submit">
 </form>
 	</body>
-</html>
+</html> -->
+<?php echo $__env->make('layouts.dashboard', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

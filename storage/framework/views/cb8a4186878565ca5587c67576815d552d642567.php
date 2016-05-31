@@ -1,4 +1,59 @@
-<!DOCTYPE html>
+<?php $__env->startSection('page_heading','Tugas Akhir'); ?>
+<?php $__env->startSection('section'); ?>
+<div class="col-sm-9">
+<form role="form" action="" method="post">
+  <?php echo e(csrf_field()); ?>
+
+  <div class="form-group">
+    <label>Judul Tugas Akhir</label>
+    <input type="text" class="form-control" placeholder="Masukkan ID" name='judul_ta'>
+  </div>
+  <div class="form-group">
+    <label>Abstrak</label>
+    <input type="text" class="form-control" placeholder="Masukkan nama" name='abstrak'>
+  </div>
+  <div class="form-group">
+    <label>Kata Kunci</label>
+    <input type="input" class="form-control" name="kata_kunci" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Nilai Angka</label>
+    <input type="boolean" name="nilai_angka" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>ID Peserta Didik</label>
+    <input type="text" class="form-control" placeholder="Masukkan nama" name='id_pd'>
+  </div>
+  <div class="form-group">
+    <label>ID Rumpun Ilmu</label>
+    <input type="text" class="form-control" name="id_rumpun_ilmu" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>ID Proposal TA</label>
+    <input type="text" name="id_prop_ta" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>ID Nilai Mata Kuliah</label>
+    <input type="text" name="id_nilai_mk" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Create date</label>
+    <input type="date" name="created_at" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Last update</label>
+    <input type="date" name="updated_at" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Expired date</label>
+    <input type="date" name="expired_at" placeholder="">
+  </div>
+  <button type="submit" class="btn btn-default">Submit Button</button>
+</form>
+</div>
+<?php $__env->stopSection(); ?>
+
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <title>Monitoring Tugas Akhir</title>
@@ -36,4 +91,6 @@
   <input type="submit" value="Submit">
 </form>
 	</body>
-</html>
+</html> -->
+
+<?php echo $__env->make('layouts.dashboard', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

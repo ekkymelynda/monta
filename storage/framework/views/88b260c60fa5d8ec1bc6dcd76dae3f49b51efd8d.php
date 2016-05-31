@@ -1,4 +1,4 @@
-<?php $__env->startSection('page_heading','Pendidik dan Tenaga Kependidikan'); ?>
+<?php $__env->startSection('page_heading','Peserta Didik'); ?>
 <?php $__env->startSection('section'); ?>
 <div class="col-sm-9">
 <form role="form" action="" method="post">

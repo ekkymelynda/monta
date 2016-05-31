@@ -1,4 +1,4 @@
-<?php $__env->startSection('page_heading','Rumpun Ilmu'); ?>
+<?php $__env->startSection('page_heading','Tahun Ajaran'); ?>
 <?php $__env->startSection('section'); ?>
   <div class="row">
   <div class="col-sm-12">
