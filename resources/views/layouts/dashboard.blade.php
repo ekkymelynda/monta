@@ -261,10 +261,10 @@
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Tahun Ajaran<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li {{ (Request::is('*panels') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('panels') }}">Buat</a>
+                                    <a href="{{ url ('c_TahunAjar') }}">Buat</a>
                                 </li>
                                 <li {{ (Request::is('*buttons') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('buttons' ) }}">Lihat</a>
+                                    <a href="{{ url ('r_TahunAjar' ) }}">Lihat</a>
                                 </li>
                                 <!--<li {{ (Request::is('*notifications') ? 'class="active"' : '') }}>
                                     <a href="{{ url('notifications') }}">Alerts</a>
@@ -285,10 +285,10 @@
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Peserta Didik<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li {{ (Request::is('*panels') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('panels') }}">Buat</a>
+                                    <a href="{{ url ('c_PesertaDidik') }}">Buat</a>
                                 </li>
                                 <li {{ (Request::is('*buttons') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('buttons' ) }}">Lihat</a>
+                                    <a href="{{ url ('r_PesertaDidik' ) }}">Lihat</a>
                                 </li>
                                 <!--<li {{ (Request::is('*notifications') ? 'class="active"' : '') }}>
                                     <a href="{{ url('notifications') }}">Alerts</a>
@@ -309,10 +309,10 @@
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Rumpun Ilmu<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li {{ (Request::is('*panels') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('panels') }}">Buat</a>
+                                    <a href="{{ url ('c_RumpunIlmu') }}">Buat</a>
                                 </li>
                                 <li {{ (Request::is('*buttons') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('buttons' ) }}">Lihat</a>
+                                    <a href="{{ url ('r_RumpunIlmu' ) }}">Lihat</a>
                                 </li>
                                 <!--<li {{ (Request::is('*notifications') ? 'class="active"' : '') }}>
                                     <a href="{{ url('notifications') }}">Alerts</a>
@@ -333,10 +333,10 @@
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Semester<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li {{ (Request::is('*panels') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('panels') }}">Buat</a>
+                                    <a href="{{ url ('c_Semester') }}">Buat</a>
                                 </li>
                                 <li {{ (Request::is('*buttons') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('buttons' ) }}">Lihat</a>
+                                    <a href="{{ url ('r_Semester' ) }}">Lihat</a>
                                 </li>
                                 <!--<li {{ (Request::is('*notifications') ? 'class="active"' : '') }}>
                                     <a href="{{ url('notifications') }}">Alerts</a>
