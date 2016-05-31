@@ -5,7 +5,7 @@
             <div class="col-md-4 col-md-offset-4">
             <br /><br /><br />
             <div>
-            <h1>MONTA<h1></div>
+            <h1>     MONTA<h1></div>
                @section ('login_panel_title','Please Sign In')
                @section ('login_panel_body')
                         <form role="form">
