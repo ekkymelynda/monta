@@ -5,25 +5,25 @@
 <div class="col-sm-9">
 <form role="form" action="" method="post">
   {{ csrf_field() }}
-  <div class="form-group">
+  <!-- <div class="form-group">
     <label>ID sidang</label>
     <input class="form-control" placeholder="Masukkan ID" name='id_sidang'>
-  </div>
+  </div> -->
   <div class="form-group">
     <label>Judul sidang</label>
-    <input class="form-control" placeholder="Masukkan judul sidang" name='judul_sidang'>
+    <input class="form-control" placeholder="Masukkan judul sidang" name="judul_sidang">
   </div>
   <div class="form-group">
     <label>Tanggal sidang</label>
-    <input class="date" name='tgl_sidang'placeholder="">
+    <input type="date" name="tgl_sidang" placeholder="">
   </div>
   <div class="form-group">
     <label>Waktu mulai</label>
-    <input type="date" name="wkt_mulai" placeholder="">
+    <input type="time" name="wkt_mulai" placeholder="">
   </div>
   <div class="form-group">
     <label>Waktu selesai</label>
-    <input type="date" name="wkt_selesai" placeholder="">
+    <input type="time" name="wkt_selesai" placeholder="">
   </div>
   <div class="form-group">
     <label>Notula</label>
@@ -59,7 +59,10 @@
   </div>
   <div class="form-group">
     <label>Soft delete</label>
-    <input type="number" name="soft_delete" placeholder="">
+    <select name="soft_delete" class="form-control">
+      <option value="0">Tidak</option>
+      <option value="1">Ya</option>
+    </select>
   </div>
   <button type="submit" class="btn btn-default">Submit Button</button>
 </form>
