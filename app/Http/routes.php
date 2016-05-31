@@ -46,9 +46,9 @@ Route::get('r_StatBimbing', 'StatusPembimbinganController@lihat');
 Route::get('c_StatBimbing', 'StatusPembimbinganController@create');
 Route::post('c_StatBimbing', array('before' => 'csrf', 'uses' =>'StatusPembimbinganController@create'));
 
-Route::get('r_PenTen', 'PesertaDidikController@lihat1');
-Route::get('c_PenTen', 'PesertaDidikController@create');
-Route::post('c_PenTen', array('before' => 'csrf', 'uses' =>'PendidikTenagaController@create'));
+Route::get('r_PenTen', 'PtkController@lihat1');
+Route::get('c_PenTen', 'PtkController@create');
+Route::post('c_PenTen', array('before' => 'csrf', 'uses' =>'PtkController@create'));
 
 Route::get('r_StatTa', 'StatusTugasAkhirController@lihat');
 Route::get('c_StatTa', 'StatusTugasAkhirController@create');

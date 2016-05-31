@@ -42,14 +42,15 @@ class PtkController extends Controller
         // dd($ptk['items']);
 
         $ptk['item'] = ptk::all();
-        return view('coba1', $ptk);
+        // return view('coba1', $ptk);
+        return view('\pendidik dan tenaga kependidikan\r');
     }
 
     public function create()
     {
         if (Request::isMethod('get')){
             # code ...
-            return view('coba');
+            return view('\pendidik dan tenaga kependidikan\c');
             }
         elseif (Request::isMethod('post')){
             # code ...
@@ -86,6 +87,10 @@ class PtkController extends Controller
             $ptk->updated_at= Input::get('updated_at');
 
             $ptk->save();
+
+            $ptk['item'] = ptk::all();
+            // return view('coba1', $ptk);
+            return view('\pendidik dan tenaga kependidikan\r');
 
             //cara2(cepat)
              // $itemInput= Input::all();//input dalam form secara otomatis masuk ke database
