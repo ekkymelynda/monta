@@ -1,5 +1,5 @@
 @extends('layouts.dashboard')
-@section('page_heading','Pendidik dan Tenaga Kependidikan')
+@section('page_heading','Peserta Didik')
 @section('section')
 <div class="col-sm-9">
 <form role="form" action="" method="post">

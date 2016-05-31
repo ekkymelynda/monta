@@ -1,5 +1,5 @@
 @extends('layouts.dashboard')
-@section('page_heading','Kemajuan Tugas Akhir')
+@section('page_heading','Peserta Didik')
 @section('section')
   <div class="row">
   <div class="col-sm-12">

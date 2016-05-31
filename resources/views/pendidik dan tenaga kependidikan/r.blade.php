@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Monitoring Tugas Akhir</title>
-</head>
-<body>
-  <h1>Pendidik dan Tenaga Kependidikan</h1>
-<table>
-    <thead>
+@extends('layouts.dashboard')
+@section('page_heading','Pendidik dan Tenaga Kependidikan')
+@section('section')
+  <div class="row">
+  <div class="col-sm-12">
+      @section ('cotable_panel_body')
+    <table class="table table-bordered">
+      <thead>
       <tr>
         <th>ID PTK</th>
         <th>Nama PTK</th>
