@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Monitoring Tugas Akhir</title>
-</head>
-<body>
-  <h1>Proposal Tugas Akhir</h1>
-<table>
-    <thead>
+@extends('layouts.dashboard')
+@section('page_heading','Proposal Tugas Akhir')
+@section('section')
+  <div class="row">
+  <div class="col-sm-12">
+      @section ('cotable_panel_body')
+    <table class="table table-bordered">
+      <thead>
       <tr>
         <th>ID proposal TA</th>
         <th>Judul proposal TA</th>
@@ -57,8 +56,12 @@
         <td>{{$i->updated_at}}</td>
         <td>{{$i->soft_delete}}</td>
       </tr>
-      @endforeach
+       @endforeach
     </tbody>
-</table>
-  </body>
-</html>
+    </table>
+    @endsection
+    @include('widgets.panel', array('header'=>true, 'as'=>'cotable'))
+  </div>
+  </div>
+</div>
+@stop

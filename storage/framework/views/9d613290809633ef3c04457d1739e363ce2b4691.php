@@ -259,10 +259,10 @@
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Tahun Ajaran<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li <?php echo e((Request::is('*panels') ? 'class="active"' : '')); ?>>
-                                    <a href="<?php echo e(url ('panels')); ?>">Buat</a>
+                                    <a href="<?php echo e(url ('c_TahunAjar')); ?>">Buat</a>
                                 </li>
                                 <li <?php echo e((Request::is('*buttons') ? 'class="active"' : '')); ?>>
-                                    <a href="<?php echo e(url ('buttons' )); ?>">Lihat</a>
+                                    <a href="<?php echo e(url ('r_TahunAjar' )); ?>">Lihat</a>
                                 </li>
                                 <!--<li <?php echo e((Request::is('*notifications') ? 'class="active"' : '')); ?>>
                                     <a href="<?php echo e(url('notifications')); ?>">Alerts</a>
@@ -283,10 +283,10 @@
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Peserta Didik<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li <?php echo e((Request::is('*panels') ? 'class="active"' : '')); ?>>
-                                    <a href="<?php echo e(url ('panels')); ?>">Buat</a>
+                                    <a href="<?php echo e(url ('c_PesertaDidik')); ?>">Buat</a>
                                 </li>
                                 <li <?php echo e((Request::is('*buttons') ? 'class="active"' : '')); ?>>
-                                    <a href="<?php echo e(url ('buttons' )); ?>">Lihat</a>
+                                    <a href="<?php echo e(url ('r_PesertaDidik' )); ?>">Lihat</a>
                                 </li>
                                 <!--<li <?php echo e((Request::is('*notifications') ? 'class="active"' : '')); ?>>
                                     <a href="<?php echo e(url('notifications')); ?>">Alerts</a>
@@ -307,10 +307,10 @@
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Rumpun Ilmu<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li <?php echo e((Request::is('*panels') ? 'class="active"' : '')); ?>>
-                                    <a href="<?php echo e(url ('panels')); ?>">Buat</a>
+                                    <a href="<?php echo e(url ('c_RumpunIlmu')); ?>">Buat</a>
                                 </li>
                                 <li <?php echo e((Request::is('*buttons') ? 'class="active"' : '')); ?>>
-                                    <a href="<?php echo e(url ('buttons' )); ?>">Lihat</a>
+                                    <a href="<?php echo e(url ('r_RumpunIlmu' )); ?>">Lihat</a>
                                 </li>
                                 <!--<li <?php echo e((Request::is('*notifications') ? 'class="active"' : '')); ?>>
                                     <a href="<?php echo e(url('notifications')); ?>">Alerts</a>
@@ -331,10 +331,10 @@
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Semester<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li <?php echo e((Request::is('*panels') ? 'class="active"' : '')); ?>>
-                                    <a href="<?php echo e(url ('panels')); ?>">Buat</a>
+                                    <a href="<?php echo e(url ('c_Semester')); ?>">Buat</a>
                                 </li>
                                 <li <?php echo e((Request::is('*buttons') ? 'class="active"' : '')); ?>>
-                                    <a href="<?php echo e(url ('buttons' )); ?>">Lihat</a>
+                                    <a href="<?php echo e(url ('r_Semester' )); ?>">Lihat</a>
                                 </li>
                                 <!--<li <?php echo e((Request::is('*notifications') ? 'class="active"' : '')); ?>>
                                     <a href="<?php echo e(url('notifications')); ?>">Alerts</a>
