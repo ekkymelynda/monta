@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Monitoring Tugas Akhir</title>
-</head>
-<body>
-  <h1>Status Tugas Akhir</h1>
-<table>
-    <thead>
+@extends('layouts.dashboard')
+@section('page_heading','Status Tugas Akhir')
+@section('section')
+
+<div class="row">
+  <div class="col-sm-12">
+      @section ('cotable_panel_body')
+    <table class="table table-bordered">
+      <thead>
       <tr>
         <th>ID Status Tugas Akhir</th>
         <th>Nama Status Tugas Akhir</th>
@@ -26,6 +26,11 @@
       </tr>
       @endforeach
     </tbody>
-</table>
-  </body>
-</html>
+    </table>  
+    @endsection
+    @include('widgets.panel', array('header'=>true, 'as'=>'cotable'))
+  </div>
+  </div>
+</div>
+
+@stop
