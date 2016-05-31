@@ -35,12 +35,9 @@
     <label>Create date</label>
     <input type="date" name="created_at" placeholder="">
   </div>
-    <div class="form-group">
+  <div class="form-group">
     <label>ID Tahun Ajaran</label>
-    <select name="id_thn_ajar" class="form-control">
-      @foreach ($item1 as $i)
-      <option>{{$i->id_thn_ajar}}</option>
-    </select>
+    <input type="text" name="tgl_mulai" placeholder="">
   </div>
   <div class="form-group">
     <label>Soft delete</label>
