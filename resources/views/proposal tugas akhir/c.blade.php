@@ -16,7 +16,7 @@
     <label>Abstrak Proposal TA</label>
     <textarea type="text" class="form-control" name="abstrak_prop_ta" placeholder=""></textarea>
   </div>
-    <div class="form-group">
+  <div class="form-group">
     <label>Kata Kunci</label>
     <input type="input" class="form-control" name="kata_kunci" placeholder="">
   </div>
