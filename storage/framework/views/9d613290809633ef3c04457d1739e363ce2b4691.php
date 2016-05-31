@@ -242,29 +242,29 @@
                             </div>
                             <!-- /input-group -->
                         </li>
-                        <li <?php echo e((Request::is('/') ? 'class="active"' : '')); ?>>
+                        <!--<li <?php echo e((Request::is('/') ? 'class="active"' : '')); ?>>
                             <a href="<?php echo e(url ('')); ?>"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li <?php echo e((Request::is('*charts') ? 'class="active"' : '')); ?>>
                             <a href="<?php echo e(url ('charts')); ?>"><i class="fa fa-bar-chart-o fa-fw"></i> Charts</a>
                             <!-- /.nav-second-level -->
-                        </li>
+                        <!--</li>
                         <li <?php echo e((Request::is('*tables') ? 'class="active"' : '')); ?>>
                             <a href="<?php echo e(url ('tables')); ?>"><i class="fa fa-table fa-fw"></i> Tables</a>
                         </li>
                         <li <?php echo e((Request::is('*forms') ? 'class="active"' : '')); ?>>
                             <a href="<?php echo e(url ('forms')); ?>"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                        </li>
+                        </li>-->
                         <li >
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Tahun Ajaran<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li <?php echo e((Request::is('*panels') ? 'class="active"' : '')); ?>>
-                                    <a href="<?php echo e(url ('panels')); ?>">Panels and Collapsibles</a>
+                                    <a href="<?php echo e(url ('panels')); ?>">Buat</a>
                                 </li>
                                 <li <?php echo e((Request::is('*buttons') ? 'class="active"' : '')); ?>>
-                                    <a href="<?php echo e(url ('buttons' )); ?>">Buttons</a>
+                                    <a href="<?php echo e(url ('buttons' )); ?>">Lihat</a>
                                 </li>
-                                <li <?php echo e((Request::is('*notifications') ? 'class="active"' : '')); ?>>
+                                <!--<li <?php echo e((Request::is('*notifications') ? 'class="active"' : '')); ?>>
                                     <a href="<?php echo e(url('notifications')); ?>">Alerts</a>
                                 </li>
                                 <li <?php echo e((Request::is('*typography') ? 'class="active"' : '')); ?>>
@@ -275,11 +275,251 @@
                                 </li>
                                 <li <?php echo e((Request::is('*grid') ? 'class="active"' : '')); ?>>
                                     <a href="<?php echo e(url ('grid')); ?>">Grid</a>
-                                </li>
+                                </li>-->
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <li>
+                        <li >
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Peserta Didik<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li <?php echo e((Request::is('*panels') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('panels')); ?>">Buat</a>
+                                </li>
+                                <li <?php echo e((Request::is('*buttons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('buttons' )); ?>">Lihat</a>
+                                </li>
+                                <!--<li <?php echo e((Request::is('*notifications') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url('notifications')); ?>">Alerts</a>
+                                </li>
+                                <li <?php echo e((Request::is('*typography') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('typography')); ?>">Typography</a>
+                                </li>
+                                <li <?php echo e((Request::is('*icons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('icons')); ?>"> Icons</a>
+                                </li>
+                                <li <?php echo e((Request::is('*grid') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('grid')); ?>">Grid</a>
+                                </li>-->
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li >
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Rumpun Ilmu<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li <?php echo e((Request::is('*panels') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('panels')); ?>">Buat</a>
+                                </li>
+                                <li <?php echo e((Request::is('*buttons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('buttons' )); ?>">Lihat</a>
+                                </li>
+                                <!--<li <?php echo e((Request::is('*notifications') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url('notifications')); ?>">Alerts</a>
+                                </li>
+                                <li <?php echo e((Request::is('*typography') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('typography')); ?>">Typography</a>
+                                </li>
+                                <li <?php echo e((Request::is('*icons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('icons')); ?>"> Icons</a>
+                                </li>
+                                <li <?php echo e((Request::is('*grid') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('grid')); ?>">Grid</a>
+                                </li>-->
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li >
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Semester<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li <?php echo e((Request::is('*panels') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('panels')); ?>">Buat</a>
+                                </li>
+                                <li <?php echo e((Request::is('*buttons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('buttons' )); ?>">Lihat</a>
+                                </li>
+                                <!--<li <?php echo e((Request::is('*notifications') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url('notifications')); ?>">Alerts</a>
+                                </li>
+                                <li <?php echo e((Request::is('*typography') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('typography')); ?>">Typography</a>
+                                </li>
+                                <li <?php echo e((Request::is('*icons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('icons')); ?>"> Icons</a>
+                                </li>
+                                <li <?php echo e((Request::is('*grid') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('grid')); ?>">Grid</a>
+                                </li>-->
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li >
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Aktivitas Membimbing<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li <?php echo e((Request::is('*panels') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('panels')); ?>">Buat</a>
+                                </li>
+                                <li <?php echo e((Request::is('*buttons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('buttons' )); ?>">Lihat</a>
+                                </li>
+                                <!--<li <?php echo e((Request::is('*notifications') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url('notifications')); ?>">Alerts</a>
+                                </li>
+                                <li <?php echo e((Request::is('*typography') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('typography')); ?>">Typography</a>
+                                </li>
+                                <li <?php echo e((Request::is('*icons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('icons')); ?>"> Icons</a>
+                                </li>
+                                <li <?php echo e((Request::is('*grid') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('grid')); ?>">Grid</a>
+                                </li>-->
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li >
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Tugas Akhir<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li <?php echo e((Request::is('*panels') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('panels')); ?>">Buat</a>
+                                </li>
+                                <li <?php echo e((Request::is('*buttons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('buttons' )); ?>">Lihat</a>
+                                </li>
+                                <!--<li <?php echo e((Request::is('*notifications') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url('notifications')); ?>">Alerts</a>
+                                </li>
+                                <li <?php echo e((Request::is('*typography') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('typography')); ?>">Typography</a>
+                                </li>
+                                <li <?php echo e((Request::is('*icons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('icons')); ?>"> Icons</a>
+                                </li>
+                                <li <?php echo e((Request::is('*grid') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('grid')); ?>">Grid</a>
+                                </li>-->
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li >
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Status Pembimbingan<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li <?php echo e((Request::is('*panels') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('panels')); ?>">Buat</a>
+                                </li>
+                                <li <?php echo e((Request::is('*buttons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('buttons' )); ?>">Lihat</a>
+                                </li>
+                                <!--<li <?php echo e((Request::is('*notifications') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url('notifications')); ?>">Alerts</a>
+                                </li>
+                                <li <?php echo e((Request::is('*typography') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('typography')); ?>">Typography</a>
+                                </li>
+                                <li <?php echo e((Request::is('*icons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('icons')); ?>"> Icons</a>
+                                </li>
+                                <li <?php echo e((Request::is('*grid') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('grid')); ?>">Grid</a>
+                                </li>-->
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li >
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Pendidik dan Tenaga Pendidik<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li <?php echo e((Request::is('*panels') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('panels')); ?>">Buat</a>
+                                </li>
+                                <li <?php echo e((Request::is('*buttons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('buttons' )); ?>">Lihat</a>
+                                </li>
+                                <!--<li <?php echo e((Request::is('*notifications') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url('notifications')); ?>">Alerts</a>
+                                </li>
+                                <li <?php echo e((Request::is('*typography') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('typography')); ?>">Typography</a>
+                                </li>
+                                <li <?php echo e((Request::is('*icons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('icons')); ?>"> Icons</a>
+                                </li>
+                                <li <?php echo e((Request::is('*grid') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('grid')); ?>">Grid</a>
+                                </li>-->
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li >
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Status TA<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li <?php echo e((Request::is('*panels') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('panels')); ?>">Buat</a>
+                                </li>
+                                <li <?php echo e((Request::is('*buttons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('buttons' )); ?>">Lihat</a>
+                                </li>
+                                <!--<li <?php echo e((Request::is('*notifications') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url('notifications')); ?>">Alerts</a>
+                                </li>
+                                <li <?php echo e((Request::is('*typography') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('typography')); ?>">Typography</a>
+                                </li>
+                                <li <?php echo e((Request::is('*icons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('icons')); ?>"> Icons</a>
+                                </li>
+                                <li <?php echo e((Request::is('*grid') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('grid')); ?>">Grid</a>
+                                </li>-->
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li >
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Kemajuan TA<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li <?php echo e((Request::is('*panels') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('panels')); ?>">Buat</a>
+                                </li>
+                                <li <?php echo e((Request::is('*buttons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('buttons' )); ?>">Lihat</a>
+                                </li>
+                                <!--<li <?php echo e((Request::is('*notifications') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url('notifications')); ?>">Alerts</a>
+                                </li>
+                                <li <?php echo e((Request::is('*typography') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('typography')); ?>">Typography</a>
+                                </li>
+                                <li <?php echo e((Request::is('*icons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('icons')); ?>"> Icons</a>
+                                </li>
+                                <li <?php echo e((Request::is('*grid') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('grid')); ?>">Grid</a>
+                                </li>-->
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li >
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Proposal TA<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li <?php echo e((Request::is('*panels') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('panels')); ?>">Buat</a>
+                                </li>
+                                <li <?php echo e((Request::is('*buttons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('buttons' )); ?>">Lihat</a>
+                                </li>
+                                <!--<li <?php echo e((Request::is('*notifications') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url('notifications')); ?>">Alerts</a>
+                                </li>
+                                <li <?php echo e((Request::is('*typography') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('typography')); ?>">Typography</a>
+                                </li>
+                                <li <?php echo e((Request::is('*icons') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('icons')); ?>"> Icons</a>
+                                </li>
+                                <li <?php echo e((Request::is('*grid') ? 'class="active"' : '')); ?>>
+                                    <a href="<?php echo e(url ('grid')); ?>">Grid</a>
+                                </li>-->
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <!--<li>
                             <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
@@ -305,11 +545,11 @@
                                         </li>
                                     </ul>
                                     <!-- /.nav-third-level -->
-                                </li>
+                                <!--</li>
                             </ul>
                             <!-- /.nav-second-level -->
-                        </li>
-                        <li>
+                        <!--</li>-->
+                        <!--<li>
                             <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li <?php echo e((Request::is('*blank') ? 'class="active"' : '')); ?>>
@@ -321,9 +561,9 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <li <?php echo e((Request::is('*documentation') ? 'class="active"' : '')); ?>>
+                        <!--<li <?php echo e((Request::is('*documentation') ? 'class="active"' : '')); ?>>
                             <a href="<?php echo e(url ('documentation')); ?>"><i class="fa fa-file-word-o fa-fw"></i> Documentation</a>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->

@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('cb', function () {
+    return view('cb');
+});
 
 Route::get('r_TahunAjar', 'TahunAjarController@lihat');
 Route::get('c_TahunAjar', 'TahunAjarController@create');
