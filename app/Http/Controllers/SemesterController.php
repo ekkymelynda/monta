@@ -8,7 +8,6 @@ use Request;
 
 use App\Http\Requests;
 use App\semester;
-use App\tahun_ajaran;
 
 class SemesterController extends Controller
 {
@@ -23,8 +22,7 @@ class SemesterController extends Controller
     {
         if (Request::isMethod('get')){
             # code ...
-            $tahun_ajaran['item1'] = tahun_ajaran::all();
-            return view('\semester\c',$tahun_ajaran);
+            return view('\semester\c');
             }
         elseif (Request::isMethod('post')){
         	semester::insert(array(
